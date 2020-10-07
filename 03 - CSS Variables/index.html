@@ -20,6 +20,14 @@
         <img src="https://www.technocrazed.com/wp-content/uploads/2015/12/Windows-XP-wallpaper-2.jpg" alt="Test Image">
     
         <script>
+            const inputs=document.querySelectorAll('.controls input');
+            function handleUpdate()
+            {
+                const suffix=this.dataset.sizing || '';
+                console.log(suffix);
+            }
+            inputs.forEach(input => input.addEventListener('change', handleUpdate));
+            inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
             
         </script>
     </body>
