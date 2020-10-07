@@ -1,7 +1,27 @@
 body{
     background-color: teal;
-    font-size: large;
+    font-size: 50px;
     color: azure;
     font-weight: 100;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.controls{
+    margin-top: 10px;
+}
+img{
+    height: 40%;
+    width: 40%;
+    margin-top: 40px;
+    border: 5px solid black;
+    padding: 20px;
+    box-shadow: inset 0px 0px 90px    black;
+}
+h1{
+    font-size: 50px;
+}   
+
+input{
+    width:200px;
+    background-color: aquamarine;    
 }
