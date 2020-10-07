@@ -7,24 +7,24 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <h2>Update CSS variables with <div class="h1">JS</div></h2>
+        <h2>Update CSS variables with <br><span class="h1">JS</span></h2>
         <div class="controls">
             <label for="spacing">Spacing:</label>
-            <input type="range" name="spacing" min="10" max="200" value="20" data-sizing="px">
+            <input type="range" name="spacing" min="0" max="50" value="0" data-sizing="px">
             <label for="blur">Blur:</label>
-            <input type="range" name="blur" min="10" max="200" value="20" data-sizing="px">
+            <input type="range" name="blur" min="0" max="20" value="0" data-sizing="px">
             <label for="base">BaseColor:</label>
-            <input type="color" name="base" value="cyan">
+            <input type="color" name="base" value="#ffc600">
         </div>
 
-        <img src="https://www.technocrazed.com/wp-content/uploads/2015/12/Windows-XP-wallpaper-2.jpg" alt="Test Image">
+        <img src="https://i.pinimg.com/736x/82/f0/8b/82f08bdd0856838c8466eb67657c7f2c.jpg" alt="Test Image">
     
         <script>
             const inputs=document.querySelectorAll('.controls input');
             function handleUpdate()
             {
                 const suffix=this.dataset.sizing || '';
-                console.log(suffix);
+                document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
             }
             inputs.forEach(input => input.addEventListener('change', handleUpdate));
             inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
