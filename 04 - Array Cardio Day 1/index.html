@@ -33,6 +33,10 @@
                             'Birrell, Augustine', 'Black Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'
                             ];
             
+            // Array.prototype.filter()
+            // 1. Filter the list of inventors for those who were born in the 1500's
+            const fifteen = inventors.filter(inventor=>(inventor.year>=1500 && inventor.year<1600))
+            console.table(fifteen);
 
         </script>
     </body>
