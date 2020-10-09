@@ -1,11 +1,18 @@
-body{
-     display: flex;
-     flex-direction: column;
-     flex:1;
-     justify-content: center;
-     align-items: center;
-     background-color: aqua;
-     min-height: 100vh;
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  body {
+    margin: 0;
+  }
+  .panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
 }
 
 .panel {
@@ -23,8 +30,22 @@ body{
     font-size: 20px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex:1 0 auto;
   }
 
 .panel1{
+    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+}
+.panel2{
+    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+}
+.panel3{
+    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+}
+.panel4{
+    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+}
+.panel5{
     background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
 }
