@@ -8,11 +8,14 @@ html {
   
   body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
+  
   .panels {
     min-height: 100vh;
     overflow: hidden;
-    display: flex;
+    display: ;
 }
 
 .panel {
@@ -31,21 +34,55 @@ html {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex:1 0 auto;
+    flex:1;
+    flex-direction: column;
   }
 
 .panel1{
     background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
 }
 .panel2{
-    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+    background-image: url('https://d24v5oonnj2ncn.cloudfront.net/wp-content/uploads/2018/10/16030301/Amazon-Logo-Black.jpg');
 }
 .panel3{
-    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+    background-image: url('http://cdn.osxdaily.com/wp-content/uploads/2019/06/ipad-stuck-on-apple-logo-screen.jpg');
 }
 .panel4{
-    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+    background-image: url('https://pmcvariety.files.wordpress.com/2019/03/netflix-logo-n-icon.png?w=1000&h=563&crop=1');
 }
 .panel5{
-    background-image: url('https://www.creativespotting.com/wp-content/uploads/2014/01/Cracked-Facebook-Logo-1500x1500-psd49009-728x728.png');
+    background-image: url('https://images.idgesg.net/images/article/2017/05/original_images-google_logo-100724572-large.jpg');
 }
+
+    /* Flex Items */
+    .panel > * {
+        margin: 0;
+        width: 100%;
+        transition: transform 0.5s;
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .panel > *:first-child { transform: translateY(-100%); }
+      .panel.open-active > *:first-child { transform: translateY(0); }
+      .panel > *:last-child { transform: translateY(100%); }
+      .panel.open-active > *:last-child { transform: translateY(0); }
+  
+      .panel p {
+        text-transform: uppercase;
+        font-family: 'Amatic SC', cursive;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+        font-size: 2em;
+      }
+      
+      .panel p:nth-child(2) {
+        font-size: 4em;
+      }
+  
+      .panel.open {
+        flex: 5;
+        font-size: 40px;
+      }
