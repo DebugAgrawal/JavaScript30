@@ -11,7 +11,7 @@ body {
 }
 
 .panels {
-  min-height: 100vh;
+  min-height: 91.3vh;
   overflow: hidden;
   display: flex;
 }
