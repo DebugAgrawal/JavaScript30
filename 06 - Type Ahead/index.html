@@ -5,7 +5,14 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-
+        <form class="search-form">
+            <input type="text" class="search" placeholder="City or State">
+            <ul class="suggestions">
+              <li>Filter for a city</li>
+              <li>or a state</li>
+            </ul>
+          </form>
+          
         <script>
             const endpoint='cities.json';
             
@@ -24,14 +31,15 @@
             }
 
             function displayMatches(){
-                const matchArray = findMatches(this.value, cities)
+                const matchArray = findMatches(this.value, cities);
+                console.log(matchArray);
             }
 
             const searchInputs = document.querySelector('.search');
             const suggestions = document.querySelector('.suggestions');
 
-            searchInputs.addEventListener('change',displayMatches);
-            searchInputs.addEventListener('keyup',displayMatches);
+            searchInputs.addEventListener('change', displayMatches);
+            searchInputs.addEventListener('keyup', displayMatches);
         </script>
     </body>
 </html>
