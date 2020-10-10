@@ -23,9 +23,15 @@
                 })                
             }
 
-            function display(){
+            function displayMatches(){
                 const matchArray = findMatches(this.value, cities)
             }
+
+            const searchInputs = document.querySelector('.search');
+            const suggestions = document.querySelector('.suggestions');
+
+            searchInputs.addEventListener('change',displayMatches);
+            searchInputs.addEventListener('keyup',displayMatches);
         </script>
     </body>
 </html>
