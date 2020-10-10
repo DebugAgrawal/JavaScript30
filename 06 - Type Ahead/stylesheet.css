@@ -1,9 +1,13 @@
 html {
     box-sizing: border-box;
-    background: #ffc600;
+    background-image: url('https://wallpapercave.com/wp/wp3400497.jpg');
     font-family: 'helvetica neue';
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 200;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   *, *:before, *:after {
