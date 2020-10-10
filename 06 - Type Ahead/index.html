@@ -12,7 +12,7 @@
               <li>or a state</li>
             </ul>
           </form>
-          
+
         <script>
             const endpoint='cities.json';
             
@@ -32,7 +32,15 @@
 
             function displayMatches(){
                 const matchArray = findMatches(this.value, cities);
-                console.log(matchArray);
+                const html = matchArray.map(place => {
+                return `
+                <li>
+                <span class="name">${place.city} , ${place.state}</span>
+                <span class="name">${place.id}</span>
+                </li>
+                `;
+            }).join('');
+            suggestions.innerHTML=html;
             }
 
             const searchInputs = document.querySelector('.search');
