@@ -9,8 +9,10 @@
     </head>
     <body>
         <div class="buttons">
-            <input type="button" id="clear" value="Clear">
-            <input type="button" id="eraser" value="Draw">
+            <p>Select color<input type="color" id="color" value="Color"></p>
+            <p>Select Size<input type="range" id="size" value="Size" min="10" max="200"></p>
+            <input type="button" id="eraser" value="Eraser" >
+            <input type="button" id="clear" value="Clear" >
         </div>
         <div class='forflex'>
             <h1><font color="white">My Wall</font></h1>
@@ -73,14 +75,22 @@
             canvas.addEventListener('mousemove', draw);
             canvas.addEventListener('mouseup', () => isDrawing = false);
             canvas.addEventListener('mouseout', () => isDrawing = false);
-
+// to clear
             document.querySelector('#clear').addEventListener('click', function() {
           ctx.clearRect(0, 0, canvas.width, canvas.height);
+
         }, false);
-
-
+// for eraser
         document.querySelector('#eraser').addEventListener('click', function() {
-            ctx.strokeStyle="#ffffff"
+            ctx.strokeStyle="#ffffff";
+        }, false);
+// for color        
+        document.querySelector('#color').addEventListener('change', function() {
+            ctx.strokeStyle=`${this.value}`;
+        }, false);
+// for size
+        document.querySelector('#size').addEventListener('change', function() {
+            ctx.lineWidth=`${this.value}`;
         }, false);
 
         </script>
