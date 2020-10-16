@@ -5,8 +5,8 @@
     }
 
     .inbox {
-      max-width: 400px;
-      margin: 50px auto;
+      max-width: 800px;
+      margin: 250px auto;
       background: white;
       border-radius: 5px;
       box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
