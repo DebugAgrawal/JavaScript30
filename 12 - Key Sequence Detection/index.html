@@ -16,42 +16,49 @@ motogp cheats
 
 -->
 
-<h1 id="h1"> Hello world</h1>
+<h1 id="h1"> Hello world </h1>
+<h2 id="h2"> Enter the cheat code </h1>
 
 <script>
 const audio=new Audio('gta.mp3');
 const pressed =[];
 const secretCode='debugagrawal';
+
 window.addEventListener('keyup', (e) => {
     pressed.push(e.key);
     pressed.splice(-secretCode-1,pressed.length-secretCode.length);
     console.log(pressed);
 
     if(pressed.join('').includes(secretCode)){
-
-        document.getElementById("h1").innerHTML="Jinklas Bhadwa"; 
+        document.getElementById("h1").innerHTML=" The Konami Code ";
+        document.getElementById("h2").innerHTML=""; 
+        document.getElementById("h1").style="margin-top:500px; background:red; padding:50px" 
         document.getElementById("body").style.backgroundImage= "url('https://wallpapercave.com/wp/wp2375533.jpg')";
-        audio.currentTime=0;
+        audio.currentTime=5;
                 audio.play();  
-        cornify_add();
-        
 
-    
+        // cornify_add();  
     }
+    
 
 })
-
 </script>
 <style>
     body{
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     }
     h1{
         font-size: 100px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: purple;
+    }
+    h2{
+        font-size: 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: green;
     }
 </style>
 </body>
