@@ -22,7 +22,7 @@
 
   .site-wrap {
     max-width: 100vh;
-    margin: 100px auto;
+    margin: 500px auto;
     background: white;
     padding: 40px;
     text-align: justify;
@@ -40,7 +40,7 @@
 
   .slide-in {
     opacity: 0;
-    transition: all .5s;
+    transition: all .7s;
   }
 
   .align-left.slide-in {
@@ -54,4 +54,9 @@
   .slide-in.active {
     opacity: 1;
     transform: translateX(0%) scale(1);
+  }
+
+  img{
+    max-width: 70%;
+    max-height: 70%;
   }
