@@ -46,7 +46,7 @@
         platesList.innerHTML =plates.map((plate,i) =>{
             return`
             <li>
-            <input>
+            <input type="checkbox" data-index=${i} id="index${i}" ${plate.done?'checked':""}>
             <label for="">${plate.text}</label>
             </li>
             `;
