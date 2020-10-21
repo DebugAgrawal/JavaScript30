@@ -1,13 +1,14 @@
 html {
   box-sizing: border-box;
-  background: url("https://images.unsplash.com/photo-1519219788971-8d9797e0928e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") center no-repeat;
+  background: url("https://imgix.bustle.com/uploads/shutterstock/2020/3/25/72415f8c-3e06-40fc-b5a6-32fd76c7b567-shutterstock-1270572721.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format%2Ccompress&cs=srgb&q=70") center no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+font-family: 'Lobster', cursive;
+
 }
 
 *,
@@ -16,6 +17,18 @@ html {
   box-sizing: inherit;
 }
 
+.image {
+    background-image: url("https://images.unsplash.com/photo-1542074494-62e9e51a61b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
 /* svg {
   fill: white;
   background: rgba(0, 0, 0, 0.1);
@@ -28,11 +41,12 @@ html {
 .wrapper {
   padding: 20px;
   max-width: auto;
-  background: rgba(255, 235, 60, 0.95);
-  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 251, 0, 0.767);
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.705);
 }
 
 h2 {
+    color: rgb(7, 0, 100);
   text-align: center;
   font-size: 50px;
   margin: 0;
@@ -50,8 +64,9 @@ h2 {
 .plates li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px 0;
+  font-family: cursive;
   font-weight: 100;
-    font-size: 25px;
+  font-size: 25px;
   display: flex;
 }
 
@@ -61,18 +76,16 @@ h2 {
 }
 
 .plates input {
-    width: auto;
-    height: auto;
   display: none;
 }
 
 .plates input + label:before {
-  content: "⬜️";
+  content: "😕";
   margin-right: 10px;
 }
 
 .plates input:checked + label:before {
-  content: "🚀";
+  content: "😎";
 }
 
 .add-items {
@@ -80,6 +93,10 @@ h2 {
 }
 
 .add-items input {
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+    height: auto;
+    font-size: 20px;
   padding: 10px;
   outline: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
