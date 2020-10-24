@@ -7,11 +7,11 @@ body {
   background: #ffc600;
   font-family: 'helvetica neue';
   font-weight: 200;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .words {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 50px auto;
   background: white;
   border-radius: 5px;
@@ -20,7 +20,8 @@ body {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
   background-size: 100% 3rem;
   position: relative;
-  line-height: 3rem;
+  line-height: 5.5rem;
+  font-family: cursive;
 }
 
 p {
