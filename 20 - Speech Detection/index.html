@@ -32,8 +32,8 @@ recognition.addEventListener('result',e => {
   if(e.results[0].isFinal){
     p =document.createElement('p');
     words.appendChild(p);
-  }
-  if(transcript.includes('clear screen'))
+  
+  if(transcript.includes('screen'))
   {
     console.log("```````````````````````````clearing screen```````````````````````````");
     setTimeout(() => {  location.reload(); }, 500);
@@ -48,6 +48,7 @@ recognition.addEventListener('result',e => {
   {
     window.open("http://youtube.com/", "_blank");
   }
+}
   console.log(transcript);
 }); 
 recognition.start();  
