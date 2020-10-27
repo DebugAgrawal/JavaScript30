@@ -12,8 +12,10 @@
   </div>
 
 <script> 
+const audio=new Audio('gta.mp3');
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
+recognition.lang = 'en-US';
 recognition.interimResults =true; // to simultaniusly display what user speaks
 
 let p =document.createElement('p');
@@ -33,13 +35,18 @@ recognition.addEventListener('result',e => {
   }
   if(transcript.includes('clear screen'))
   {
-    location.reload();
-    console.log("```````````````````````````working```````````````````````````");
-            window.open( 
-              "https://www.geeksforgeeks.org", "_blank"); 
+    console.log("```````````````````````````clearing screen```````````````````````````");
+    setTimeout(() => {  location.reload(); }, 500);
   }
-  if(transcript.includes('Github'))
+
+  if(transcript.includes("GitHub"))
   {
+    window.open("https://github.com/DebugAgrawal", "_blank");
+  }
+  
+  if(transcript.includes("YouTube"))
+  {
+    window.open("http://youtube.com/", "_blank");
   }
   console.log(transcript);
 }); 

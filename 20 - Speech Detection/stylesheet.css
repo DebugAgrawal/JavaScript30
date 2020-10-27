@@ -4,24 +4,27 @@ html {
 }
 
 body {
-  background: #ffc600;
+  background:url("https://wallpapertag.com/wallpaper/full/6/c/b/992941-steve-jobs-wallpaper-1920x1200-mac.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
   font-family: 'helvetica neue';
-  font-weight: 200;
-  font-size: 50px;
+  font-weight: 100;
+  font-size: 40px;
 }
 
 .words {
-  max-width: 1000px;
-  margin: 50px auto;
+  max-width: 700px;
+  margin: 50px 0px 50px 700px ;
   background: white;
   border-radius: 5px;
   box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
-  padding: 1rem 2rem 3rem 5rem;
+  padding: 1rem 1rem 1rem 5rem;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 5px;
   background-size: 100% 5rem;
   position: relative;
-  line-height: 5rem;
-  font-family: cursive;
+  line-height: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 p {
