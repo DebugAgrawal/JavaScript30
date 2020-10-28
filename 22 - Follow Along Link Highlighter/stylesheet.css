@@ -30,6 +30,7 @@ a {
   color: black;
   background: rgba(0,0,0,0.05);
   border-radius: 20px;
+  padding:0px 8px 2px 8px;
 }
 
 .highlight {
@@ -41,7 +42,7 @@ a {
   left: 0;
   z-index: -1;
   border-radius: 20px;
-  padding: 5px;
+  padding:0px 5px 0px 5px;
   display: block;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
