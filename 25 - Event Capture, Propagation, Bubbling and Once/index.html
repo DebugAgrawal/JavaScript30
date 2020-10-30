@@ -43,7 +43,19 @@
 
 <button></button>
 <script>
+    const divs = document.querySelectorAll('div');
+    function logText(e){
+        console.log(this.classList.value); 
+        // e.stopPropagation();                                      //[Propagation] -> stop bubbling
+    }
 
+    // document.body.addEventListener('click',logText); bod class
+    // divs.forEach(div => div.addEventListener('click',logText));  //[Bubble] -> shows the all three element in div (Bubbling=> ripple kind of effect like when clicked inner ->mid -> outer-> -------  (7(6(5(4(3(2(1)))))))
+    divs.forEach(div => div.addEventListener('click',logText,{
+        capture:false ,                                             //[Capture :true] -> // shows the all three element in div (Bubbling=> ripple kind of effect like when clicked outer -> mid -> inner-> -------  (1(2(3(4(5(6(7)))))))                     
+                                                                    //[Capture :false] -> same as bubble                
+        once:true                                                  //[Once] -> event will occur only once (it will unbind ( REMOVE ) itself)    
+    }));
 </script>
 </body>
 </html>
