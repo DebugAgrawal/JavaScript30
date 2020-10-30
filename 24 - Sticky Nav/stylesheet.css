@@ -1,7 +1,7 @@
 
 html {
     box-sizing: border-box;
-    background: #eeeeee;
+    background: #03e7d4;
     font-family: 'helvetica neue';
     font-size: 20px;
     font-weight: 200;
@@ -22,10 +22,14 @@ html {
     padding: 40px;
     text-align: justify;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-    transform: scale(0.98);
-    transition: transform 0.5s;
+    transform: scale(0.90);
+    transition: transform 0.9s;
   }
   
+.fixed-nav .site-wrap{
+  transform: scale(1);
+}
+
   header {
     text-align: center;
     height: 50vh;
@@ -52,8 +56,9 @@ html {
   }
   .fixed-nav nav{
     position: fixed;
-    box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.5);
   }
+  
   
   nav ul {
     margin: 0;
@@ -74,11 +79,14 @@ html {
     max-width: 0;
     overflow: hidden;
     background: white;
-    transition: all .5s;
+    transition: all 2s;
     font-weight: 600;
     font-size: 30px;
   }
   
+  .fixed-nav li.logo{
+    max-width:500px;
+  }
   li.logo a {
     color: black;
   }
