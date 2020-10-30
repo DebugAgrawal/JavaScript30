@@ -93,10 +93,14 @@ function handleEnter(){
     const navCoords = nav.getBoundingClientRect();
     const coords ={
         height:dropdownCoords.height,
-        width:dropdownCoords.width
+        width:dropdownCoords.width,
+        top:dropdownCoords.top,
+        left:dropdownCoords.left
     };
     background.style.setProperty('width',`${coords.width}px`);
     background.style.setProperty('height',`${coords.height}px`);
+    background.style.setProperty('top',`${coords.top}px`);
+    background.style.setProperty('left',`${coords.left}px`);
     console.log('Enter');
     console.log(coords.width);
     console.log(coords.height);
