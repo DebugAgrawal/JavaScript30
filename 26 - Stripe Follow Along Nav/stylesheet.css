@@ -22,6 +22,10 @@
     margin-top: 0;
     padding-top: .8em;
   }
+  img{
+      max-width: 25%;
+      max-height: 25%;
+  }
 
   nav {
     position: relative;
@@ -82,7 +86,7 @@
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
-    transition: all .8s, opacity .4s, transform 5s;
+    transition: all .8s, opacity .4s, transform .8s;
     /* transform-origin: 50% 0; */
     display: flex;
     justify-content: center;
@@ -140,5 +144,5 @@
 
   /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
   .button[href*=twitter] { background: #019FE9; }
-  .button[href*=facebook] { background: #3B5998; }
-  .button[href*=courses] { background: #ffc600; }
+  .button[href*=youtube] { background: #d32000; }
+  .button[href*=github] { background: #000000; }
