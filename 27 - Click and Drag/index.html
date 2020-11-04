@@ -62,7 +62,7 @@
 
     slider.addEventListener('mousemove',(e)=>{
         if(!isDown) return; 
-        e.preventDefault();
+        e.preventDefault();  //prevent to call any other unwanted elemts of html
         const x= e.pageX-slider.offsetLeft;
         // console.log({x,startX});
         const walk = (x- startX)*3;
