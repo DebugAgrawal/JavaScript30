@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Video Speed Scrubber</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 
@@ -16,6 +16,17 @@
   </div>
 
 <script>
+    const speed =document.querySelector('.speed');
+    const bar= speed.querySelector('.speed-bar');
+    const video = document.querySelector('.flex');
+    
+    speed.addEventListener('mousemove',function(e){
+        const y= e.pageY - this.offsetTop;
+        const percent = y/100;
+        const min = 0.4;
+        const max = 4;
+        console.log(y);
+    });
 </script>
 </body>
 </html>
